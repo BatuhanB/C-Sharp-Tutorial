@@ -107,8 +107,10 @@ namespace Fundamentals
         }
         //Enum to int conversion 
         //int day = (int)WeekDays.Friday;
-
+        
         //Int to enum conversion
         //var weekDay = (WeekDays)5;
         #endregion
+
+        
 }
