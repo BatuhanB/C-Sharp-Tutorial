@@ -27,7 +27,8 @@ namespace Algorithms
                 if (nums[mid] == target)
                 {
                     return mid;
-                }else if (nums[mid] < target)
+                }
+                else if (nums[mid] < target)
                 {
                     left = mid + 1;
                 }
@@ -63,7 +64,8 @@ namespace Algorithms
                 if (nums[mid] == target)
                 {
                     return mid;
-                }else if (nums[mid] < target)
+                }
+                else if (nums[mid] < target)
                 {
                     left = mid + 1;
                 }
@@ -75,5 +77,44 @@ namespace Algorithms
             return left;
         }
         #endregion
+
+        #region SortedSquaredArray
+        //Question has giving a sorted array of integers
+        //,the requirement is that square the sorted array
+        //indexes returns sorted squared array of integers.
+
+        public int[] SortedSquaredArray(int[] array)
+        {
+            int[] result = new int[array.Length];
+            int left = 0;
+            int right = array.Length - 1;
+            int i = array.Length - 1;
+            for (; i >= 0; i--)
+            {
+                if (Abs(array[left]) > array[right])
+                {
+                    result[i] = array[left] * array[left];
+                    left++;
+                }
+                else
+                {
+                    result[i] = array[right] * array[right];
+                    right--;
+                }
+
+            }
+            return result;
+        }
+
+        private static int Abs(int number)
+        {
+            if(number == 0) return number;
+            return number < 0 ? number * -1 : number;
+        }
+
+
+        #endregion
+
+
     }
 }
