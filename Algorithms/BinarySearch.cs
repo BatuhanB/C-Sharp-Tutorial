@@ -121,7 +121,7 @@ namespace Algorithms
         // Note that you must do this in-place without making a copy of the array.
 
         // Input: nums = [0,1,0,3,12]            Input: nums = [0]
-        // Output: [1,3,12,0,0]                  Output: [0]
+        // Output:       [1,3,12,0,0]            Output:       [0]
 
         public int[] MoveZeroes(int[] nums)
         {
@@ -131,10 +131,8 @@ namespace Algorithms
                 (nums[k], nums[i]) = (nums[i], nums[k]);
                 k++;
             }
-
             return nums;
         }
-
         #endregion
     }
 }
