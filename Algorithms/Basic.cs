@@ -76,5 +76,41 @@ namespace Algorithms
 		}
 		#endregion
 
+		#region CheckIfStartsWithC#
+
+		//Write a C# Sharp program to check if a given string starts with 'C#' or not.
+
+		/*
+		 * Example
+			"C# Corner" => True, "Hello" => False
+		 */
+
+		public bool CheckIfStartsWithCsharp(string text)
+		{
+			var firstChars = text.Substring(0,2);
+			if(firstChars == "C#") return true;
+			return false;
+		}
+
+
+		#endregion
+
+
+		#region CheckTemperatures 
+
+		//Write a C# Sharp program to check if one given temperatures is less than 0 and the other is greater than 100.
+		/*
+		 * Example:
+			120,-1 => true, -12,129 => true, 12,56 => false
+		 */
+
+		public bool CheckTemperatures(int temp1, int temp2)
+		{
+			if(temp1 < 0 && temp2 > 100 || temp2 < 0 && temp1 > 100) return true;
+			return false;
+		}
+
+
+		#endregion
 	}
 }

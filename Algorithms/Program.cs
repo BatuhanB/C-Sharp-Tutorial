@@ -65,21 +65,21 @@ namespace Algorithms
 			//Console.WriteLine(leetCode.Sum("12","23"));
 			#endregion
 
-			#region Basic Algorithms
+			#region Basic Algorithms AddLastChar
 
 			Basic basicAlgorithms = new();
 
-			Console.WriteLine($"Enter the input: ");
-			var text = Console.ReadLine();
-			text = text.ToString();
-			var result = basicAlgorithms.AddLastChar(text);
+			//Console.WriteLine($"Enter the input: ");
+			//var text = Console.ReadLine();
+			//text = text.ToString();
+			//var result = basicAlgorithms.AddLastChar(text);
 
-			Console.WriteLine($"The result of AddLastChar : {result}");
-			Console.ReadLine();
+			//Console.WriteLine($"The result of AddLastChar : {result}");
+			//Console.ReadLine();
 
 			#endregion
 
-			#region Basic Algorithms2
+			#region Basic Algorithms2 CheckDividers
 
 			//var input = Console.ReadLine();
 			//int number = int.Parse(input);
@@ -91,7 +91,7 @@ namespace Algorithms
 
 			#endregion
 
-			#region BasicAlgorithm3
+			#region BasicAlgorithm3 AddThreeChar
 
 
 			//Console.WriteLine($"Enter the input: ");
@@ -101,6 +101,46 @@ namespace Algorithms
 
 			//Console.WriteLine($"The result of AddThreeChar : {result}");
 			//Console.ReadLine();
+
+			#endregion
+
+			#region BasicAlgorithm4 CheckIfStartsWithCsharp
+
+			//Console.WriteLine($"Enter the input: ");
+			//var text = Console.ReadLine();
+			//text = text.ToString();
+			//var result = basicAlgorithms.CheckIfStartsWithCsharp(text);
+
+			//Console.WriteLine($"The result of CheckIfStartsWithCsharp : {result}");
+			//Console.ReadLine();
+
+			#endregion
+
+			#region BasicAlgorithm4 CheckTemperatures
+
+			//Console.WriteLine($"Enter the temperatures: ");
+			//var text1 = Console.ReadLine();
+			//var text2 = Console.ReadLine();
+			//int temp1 = int.Parse(text1);
+			//int temp2 = int.Parse(text2);
+			//var result = basicAlgorithms.CheckTemperatures(temp1,temp2);
+
+			//Console.WriteLine($"The result of CheckTemperatures : {result}");
+			//Console.ReadLine();
+
+			#endregion
+			
+			#region BasicAlgorithm4 CheckTemperatures
+
+			Console.WriteLine($"Enter the temperatures: ");
+			var text1 = Console.ReadLine();
+			var text2 = Console.ReadLine();
+			int temp1 = int.Parse(text1);
+			int temp2 = int.Parse(text2);
+			var result = basicAlgorithms.CheckTemperatures(temp1,temp2);
+
+			Console.WriteLine($"The result of CheckTemperatures : {result}");
+			Console.ReadLine();
 
 			#endregion
 		}
