@@ -6,6 +6,27 @@ namespace Algorithms
 	{
 		static void Main(string[] args)
 		{
+			#region FizzBuzz
+
+			int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 7, 4, 8, 9, 10, 11, 12, 13, 14, 15 };
+			foreach (int i in arr)
+			{
+				if (i % 3 == 0)
+				{
+					Console.WriteLine($" The fizz is => {i}");
+				}
+				if (i % 5 == 0)
+				{
+					Console.WriteLine($" The buzz is => {i}");
+				}
+				if (i % 15 == 0)
+				{
+					Console.WriteLine($" The fizz buzz is => {i}");
+				}
+
+			}
+			#endregion
+
 
 			#region BinarySearch
 
@@ -129,18 +150,18 @@ namespace Algorithms
 			//Console.ReadLine();
 
 			#endregion
-			
+
 			#region BasicAlgorithm4 CheckTemperatures
 
-			Console.WriteLine($"Enter the temperatures: ");
-			var text1 = Console.ReadLine();
-			var text2 = Console.ReadLine();
-			int temp1 = int.Parse(text1);
-			int temp2 = int.Parse(text2);
-			var result = basicAlgorithms.CheckTemperatures(temp1,temp2);
+			//Console.WriteLine($"Enter the temperatures: ");
+			//var text1 = Console.ReadLine();
+			//var text2 = Console.ReadLine();
+			//int temp1 = int.Parse(text1);
+			//int temp2 = int.Parse(text2);
+			//var result = basicAlgorithms.CheckTemperatures(temp1,temp2);
 
-			Console.WriteLine($"The result of CheckTemperatures : {result}");
-			Console.ReadLine();
+			//Console.WriteLine($"The result of CheckTemperatures : {result}");
+			//Console.ReadLine();
 
 			#endregion
 		}
