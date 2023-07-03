@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "yYQoe6XNlKUAr1M2n+/TnQWffMtASVKWvgL5N5vO6MV5Uy1gYvjNnp15QKTXst4stFzkstZwvh+dDYKi+1iN/g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\balib\\source\\repos\\C-Sharp Tutorial\\AspectOrientedProgramming\\AspectOrientedProgramming.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\balib\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\balib\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
