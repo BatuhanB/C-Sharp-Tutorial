@@ -14,5 +14,10 @@ namespace AspectOrientedProgramming.CastleDynamicProxy
         {
             Console.WriteLine("After {0}", invocation.Method.Name);
         }
+
+        public override void OnSuccess(IInvocation invocation)
+        {
+            Console.WriteLine($"{invocation.Method.Name} is Succeed");
+        }
     }
 }

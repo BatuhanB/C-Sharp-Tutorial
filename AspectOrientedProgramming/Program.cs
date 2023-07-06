@@ -38,11 +38,18 @@
 #region Attribute
 
 using AspectOrientedProgramming.CastleDynamicProxy;
+using AspectOrientedProgramming.Core.Interceptors;
+using Autofac;
+using Autofac.Extras.DynamicProxy;
 using Castle.DynamicProxy;
 
+var builder = new ContainerBuilder();
+builder.RegisterType<MyClass>().As<IMyClass>().EnableInterfaceInterceptors(new ProxyGenerationOptions()
+{
+    Selector = new AspectInterceptorSelector()
+}).SingleInstance();
 
-var proxy = new ProxyGenerator();
-var aspect = proxy.CreateClassProxy<MyClass>(new MyInterceptorAspect());
-
-aspect.MyMethod();
+var container = builder.Build();
+var intercepted = container.Resolve<IMyClass>();
+intercepted.MyMethod();
 #endregion

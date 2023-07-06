@@ -18,3 +18,5 @@ C:\Users\balib\source\repos\C-Sharp Tutorial\AspectOrientedProgramming\obj\Debug
 C:\Users\balib\source\repos\C-Sharp Tutorial\AspectOrientedProgramming\obj\Debug\net7.0\AspectOrientedProgramming.pdb
 C:\Users\balib\source\repos\C-Sharp Tutorial\AspectOrientedProgramming\obj\Debug\net7.0\AspectOrientedProgramming.genruntimeconfig.cache
 C:\Users\balib\source\repos\C-Sharp Tutorial\AspectOrientedProgramming\obj\Debug\net7.0\ref\AspectOrientedProgramming.dll
+C:\Users\balib\source\repos\C-Sharp Tutorial\AspectOrientedProgramming\bin\Debug\net7.0\Autofac.dll
+C:\Users\balib\source\repos\C-Sharp Tutorial\AspectOrientedProgramming\bin\Debug\net7.0\Autofac.Extras.DynamicProxy.dll
