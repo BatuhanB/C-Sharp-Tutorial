@@ -4,7 +4,6 @@ C:\Users\balib\source\repos\C-Sharp Tutorial\Algorithms\bin\Debug\net5.0\Algorit
 C:\Users\balib\source\repos\C-Sharp Tutorial\Algorithms\bin\Debug\net5.0\Algorithms.runtimeconfig.dev.json
 C:\Users\balib\source\repos\C-Sharp Tutorial\Algorithms\bin\Debug\net5.0\Algorithms.dll
 C:\Users\balib\source\repos\C-Sharp Tutorial\Algorithms\bin\Debug\net5.0\Algorithms.pdb
-C:\Users\balib\source\repos\C-Sharp Tutorial\Algorithms\obj\Debug\net5.0\Algorithms.csproj.AssemblyReference.cache
 C:\Users\balib\source\repos\C-Sharp Tutorial\Algorithms\obj\Debug\net5.0\Algorithms.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\balib\source\repos\C-Sharp Tutorial\Algorithms\obj\Debug\net5.0\Algorithms.AssemblyInfoInputs.cache
 C:\Users\balib\source\repos\C-Sharp Tutorial\Algorithms\obj\Debug\net5.0\Algorithms.AssemblyInfo.cs
