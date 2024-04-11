@@ -1,4 +1,5 @@
 ﻿using System;
+using static Algorithms.Graphs;
 
 namespace Algorithms
 {
@@ -164,16 +165,60 @@ namespace Algorithms
 
             #endregion
 
-            LongestCommonPrefix longestCommonPrefix = new();
-            string[] strs = new string[] { "flower", "flow", "flight" };
+            #region LongestCommonPrefix
 
-            var result = longestCommonPrefix.FindLongestCommonPrefix(strs);
-            Console.Write($"The Longest Common Prefix of : ");
-            foreach (string str in strs)
-            {
-                Console.Write($"{str} - ");
-            }
-            Console.WriteLine($"| {result} |");
+            //LongestCommonPrefix longestCommonPrefix = new();
+            //string[] strs = new string[] { "flower", "flow", "flight" };
+
+            //var result = longestCommonPrefix.FindLongestCommonPrefix(strs);
+            //Console.Write($"The Longest Common Prefix of : ");
+            //foreach (string str in strs)
+            //{
+            //    Console.Write($"{str} - ");
+            //}
+            //Console.WriteLine($"| {result} |");
+            #endregion
+
+            #region Graphs
+
+            TreeNode root = new('a');
+            TreeNode node2 = new('b');
+            TreeNode node3 = new('c');
+            TreeNode node4 = new('d');
+            TreeNode node5 = new('e');
+            TreeNode node6 = new('f');
+
+            root.AddChild(node3);
+            root.AddChild(node2);
+            node2.AddChild(node4);
+            node3.AddChild(node5);
+            node4.AddChild(node6);
+
+            // a: ['c','b']
+            // b: ['d']
+            // c: ['e']
+            // d: ['f']
+            // e: []
+            // f: []
+
+            #region DepthFirstTraversal
+
+            Console.WriteLine("Depth-first traversal:");
+            Graphs.DepthFirstTraversalRecursion(root);// a,c,e,b,d,f
+            Console.WriteLine();
+
+
+            #endregion
+
+            #region BreadthFirstTraversal
+
+            Console.WriteLine("Breadth-first traversal:");
+            Graphs.BreadthFirstTraversal(root);//a,c,b,e,d,f
+            Console.WriteLine();
+
+            #endregion
+
+            #endregion
         }
     }
 }
