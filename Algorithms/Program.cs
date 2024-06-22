@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Course.Web.Handler;
+using System;
 using static Algorithms.Graphs;
 
 namespace Algorithms
@@ -201,22 +202,52 @@ namespace Algorithms
             // e: []
             // f: []
 
-            #region DepthFirstTraversal
+            //#region DepthFirstTraversal
 
-            Console.WriteLine("Depth-first traversal:");
-            Graphs.DepthFirstTraversalRecursion(root);// a,c,e,b,d,f
-            Console.WriteLine();
+            //Console.WriteLine("Depth-first traversal:");
+            //Graphs.DepthFirstTraversal(root);// a,c,e,b,d,f
+            //Console.WriteLine();
+
+
+            //#endregion
+
+            //#region BreadthFirstTraversal
+
+            //Console.WriteLine("Breadth-first traversal:");
+            //Graphs.BreadthFirstTraversal(root);//a,c,b,e,d,f
+            //Console.WriteLine();
+
+            //#endregion
+
+            #endregion
+
+            #region FindDuplicate
+
+            //FindDuplicate findDuplicate = new();
+
+            //var result = findDuplicate.Find([1, 3, 2, 3, 4, 6, 6, 7]);
+            //var result2 = findDuplicate.FindAndRemove([1, 3, 2, 3, 4, 6, 6, 7]);
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+
+            //}
+
+            //foreach (var item in result2)
+            //{
+            //    Console.Write(item + " ");
+
+            //}
 
 
             #endregion
 
-            #region BreadthFirstTraversal
+            #region TestStatic
 
-            Console.WriteLine("Breadth-first traversal:");
-            Graphs.BreadthFirstTraversal(root);//a,c,b,e,d,f
-            Console.WriteLine();
-
-            #endregion
+            //TestStatic test = new ();
+            //test.MyMethod1();
+            //TestStatic.MyMethod2();
 
             #endregion
         }

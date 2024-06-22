@@ -61,6 +61,11 @@ public static class Graphs
         }
     }
 
+    public static void HasPath(TreeNode src, TreeNode dst)
+    {
+
+    }
+
     public class TreeNode(char value)
     {
         public char Value { get; } = value;
