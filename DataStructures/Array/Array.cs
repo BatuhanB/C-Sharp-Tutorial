@@ -16,6 +16,18 @@ public class Array
     public Array(params Object[] sourceArray) : this(sourceArray?.Length ?? 0)
     {
         ArrayHelpers.CheckIfSourceArrayNull(sourceArray);
-        System.Array.Copy(sourceArray,InnerArray,sourceArray.Length);
+        System.Array.Copy(sourceArray, InnerArray, sourceArray.Length);
+    }
+
+    public Object GetValue(int index)
+    {
+        ArrayHelpers.CheckIfIndexValid(index, InnerArray.Length);
+        return InnerArray[index];
+    }
+    public void SetValue(Object value, int index)
+    {
+        ArrayHelpers.CheckIfIndexValid(index, InnerArray.Length);
+        ArrayHelpers.CheckIfValueNull(value);
+        InnerArray[index] = value;
     }
 }

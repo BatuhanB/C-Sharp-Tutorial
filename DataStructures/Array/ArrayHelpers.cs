@@ -1,4 +1,6 @@
-﻿namespace DataStructers.Array;
+﻿using System.Drawing;
+
+namespace DataStructers.Array;
 internal static class ArrayHelpers
 {
     internal static void CheckIfSizeOfArrayValid(int size)
@@ -11,5 +13,17 @@ internal static class ArrayHelpers
     {
         if (sourceArray == null)
             throw new ArgumentNullException(nameof(sourceArray), "Source array cannot be null.");
+    }
+
+    internal static void CheckIfIndexValid(int index,int innerArrayLength)
+    {
+        if (!(index >= 0 && index < innerArrayLength))
+            throw new ArgumentOutOfRangeException(nameof(index), "Index out of range!");
+    }
+
+    internal static void CheckIfValueNull(object value)
+    {
+        if (value == null)
+            throw new ArgumentNullException(nameof(value), "Value can not be null!");
     }
 }
