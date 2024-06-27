@@ -5,7 +5,7 @@ namespace DataStructers.Array;
 public class Array : ICloneable, IEnumerable
 {
     public int Length => InnerArray.Length;
-    private Object[] InnerArray { get; set; }
+    protected Object[] InnerArray { get; set; }
 
     // Default constructor with a size of 16
     public Array(int size = 16)
@@ -60,27 +60,26 @@ public class Array : ICloneable, IEnumerable
         //return InnerArray.GetEnumerator();
         return new CustomArrayEnumerator(InnerArray);
     }
-}
-
-public class CustomArrayEnumerator(object[] array) : IEnumerator
-{
-    private Object[] _array = array;
-    private int _index = -1;
-
-    public object Current => _array[_index];
-
-    public bool MoveNext()
+    public class CustomArrayEnumerator(object[] array) : IEnumerator
     {
-        if(_index < _array.Length - 1)
+        private Object[] _array = array;
+        private int _index = -1;
+
+        public object Current => _array[_index];
+
+        public bool MoveNext()
         {
-            _index++;
-            return true;
+            if (_index < _array.Length - 1)
+            {
+                _index++;
+                return true;
+            }
+            return false;
         }
-        return false;
-    }
 
-    public void Reset()
-    {
-        _index = -1;
+        public void Reset()
+        {
+            _index = -1;
+        }
     }
 }
