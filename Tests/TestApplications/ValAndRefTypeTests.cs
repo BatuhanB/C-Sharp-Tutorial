@@ -95,4 +95,47 @@ public class ValAndRefTypeTests
         //Assert
         Assert.Equal(100, a);
     }
+
+    [Fact]
+    public void Check_Hash_Codes_Test()
+    {
+        //Arrange
+        var p1 = new ReferenceType(1, 2);
+        var p2 = new ReferenceType(1, 2);
+
+        //Assert
+        Assert.Equal(p1.GetHashCode(), p2.GetHashCode());
+    }
+
+    [Fact]
+    public void Check_References_Of_Reference_Types_Test()
+    {
+        //Arrange
+        var p1 = new ReferenceType(1, 2);
+
+        //Act
+        var p2 = p1;
+        p2.X = 20;
+        var isRefEq = ReferenceEquals(p1, p2);
+
+        //Assert
+        Assert.Equal(isRefEq, true);
+    }
+
+    [Fact]
+    public void Check_References_Of_Value_Types_Test()
+    {
+        //Arrange
+        var p1 = new ValueAndReferenceTypes.ValueType();
+        p1.X = 10;
+        p1.Y = 30;
+
+        //Act
+        var p2 = p1;
+        p2.X = 20;
+        var isRefEq = ReferenceEquals(p1, p2);
+
+        //Assert
+        Assert.Equal(isRefEq, false);
+    }
 }
