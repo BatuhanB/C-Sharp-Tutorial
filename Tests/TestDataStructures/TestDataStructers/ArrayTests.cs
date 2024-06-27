@@ -42,4 +42,36 @@ public class ArrayTests
         Assert.Equal(20, array.GetValue(1));
         Assert.Null(array.GetValue(2));
     }
+
+    [Fact]
+    public void Array_Clone_Test()
+    {
+        //Arrange
+        var arr = new DataStructers.Array.Array(1,2,3);
+
+        //Act
+        var clonedArray = arr.Clone() as DataStructers.Array.Array;
+
+        //Assert
+        Assert.NotNull(clonedArray);
+        Assert.Equal(arr.Length, clonedArray.Length);
+        Assert.NotEqual(arr.GetHashCode(), clonedArray.GetHashCode());
+    }
+
+    [Fact]
+    public void Array_Get_Enumerator_Test()
+    {
+        //Arrange
+        var arr = new DataStructers.Array.Array(1,2,3,4);
+
+        //Act
+        string s = string.Empty;
+        foreach (var item in arr)
+        {
+            s += item;
+        }
+
+        //Assert
+        Assert.Equal("1234",s);
+    }
 }

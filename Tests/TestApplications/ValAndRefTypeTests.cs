@@ -63,8 +63,8 @@ public class ValAndRefTypeTests
         p1.Swap(a, b);
 
         //Assert
-        Assert.Equal(a, 20);
-        Assert.Equal(b, 30);
+        Assert.Equal(20, a);
+        Assert.Equal(30, b);
     }
 
     [Fact]
@@ -78,8 +78,8 @@ public class ValAndRefTypeTests
         p1.Swap(ref a, ref b);
 
         //Assert
-        Assert.Equal(a, 30);
-        Assert.Equal(b, 20);
+        Assert.Equal(30, a);
+        Assert.Equal(20, b);
     }
 
     [Fact]
@@ -93,6 +93,6 @@ public class ValAndRefTypeTests
         p1.SwapOut(out a);
 
         //Assert
-        Assert.Equal(a, 100);
+        Assert.Equal(100, a);
     }
 }
