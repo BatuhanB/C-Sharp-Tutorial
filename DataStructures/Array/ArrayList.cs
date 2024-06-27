@@ -10,6 +10,8 @@ public class ArrayList : Array
         position = 0;
     }
 
+    //public ArrayList(params Object[] objects) : base(objects) { }
+
     public void Add(Object value)
     {
         if (position == Length)
@@ -23,6 +25,35 @@ public class ArrayList : Array
             return;
         }
         throw new Exception();
+    }
+
+    public Object Remove()
+    {
+        if (position >= 0)
+        {
+            var temp = InnerArray[position - 1];
+            position--;
+            if (position == (InnerArray.Length / 4))
+            {
+                DivideArray();
+            }
+            return temp;
+        }
+        throw new Exception();
+
+    }
+    private void DivideArray()
+    {
+        try
+        {
+            var temp = new Object[InnerArray.Length / 2];
+            System.Array.Copy(InnerArray, temp, InnerArray.Length / 2);
+            InnerArray = temp;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
     }
 
     private void DoubleArray()

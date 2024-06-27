@@ -36,4 +36,31 @@ public class ArrayListTests
 
         Assert.Equal(32, _arrayList.Length);
     }
+
+    [Theory]
+    [InlineData(32)]
+    [InlineData(64)]
+    [InlineData(128)]
+    [InlineData(256)]
+    public void Array_List_Remove_Test(int length)
+    {
+        //Arrange
+        for (int i = 0; i < length; i++)
+        {
+            _arrayList.Add(i);
+        }
+
+        Assert.Equal(_arrayList.Length,length);
+
+        // Act
+
+        for (int i = _arrayList.Length - 1; i > 8; i--)
+        {
+            _arrayList.Remove();
+        }
+
+        //Assert
+        Assert.Equal(32, _arrayList.Length);
+    }
+
 }
