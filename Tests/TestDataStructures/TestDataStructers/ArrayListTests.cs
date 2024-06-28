@@ -50,7 +50,7 @@ public class ArrayListTests
             _arrayList.Add(i);
         }
 
-        Assert.Equal(_arrayList.Length,length);
+        Assert.Equal(_arrayList.Length, length);
 
         // Act
 
@@ -63,4 +63,25 @@ public class ArrayListTests
         Assert.Equal(32, _arrayList.Length);
     }
 
+    [Fact]
+    public void Foreach_Test()
+    {
+        //Arrange
+        _arrayList.Add("A");
+        _arrayList.Add("B");
+        _arrayList.Add("C");
+        _arrayList.Add("D");
+
+        _arrayList.Remove();
+
+        //Act
+        string s = string.Empty;
+        foreach (var item in _arrayList)
+        {
+            s += item;
+        }
+
+        //Assert
+        Assert.Equal("ABC", s);
+    }
 }

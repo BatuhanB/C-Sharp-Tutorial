@@ -1,17 +1,15 @@
-﻿namespace DataStructers.Array;
+﻿using System.Collections;
+
+namespace DataStructers.Array;
 
 public class ArrayList : Array
 {
     private int position;
     public int Count => position;
-
     public ArrayList(int defaultSize = 2) : base(defaultSize)
     {
         position = 0;
     }
-
-    //public ArrayList(params Object[] objects) : base(objects) { }
-
     public void Add(Object value)
     {
         if (position == Length)
@@ -26,7 +24,6 @@ public class ArrayList : Array
         }
         throw new Exception();
     }
-
     public Object Remove()
     {
         if (position >= 0)
@@ -55,7 +52,6 @@ public class ArrayList : Array
             throw new Exception(ex.Message);
         }
     }
-
     private void DoubleArray()
     {
         try
@@ -68,5 +64,9 @@ public class ArrayList : Array
         {
             throw new Exception(ex.Message);
         }
+    }
+    public override IEnumerator GetEnumerator()
+    {
+        return InnerArray.Take(position).GetEnumerator();
     }
 }

@@ -6,21 +6,18 @@ public class Array : ICloneable, IEnumerable
 {
     public int Length => InnerArray.Length;
     protected Object[] InnerArray { get; set; }
-
     // Default constructor with a size of 16
     public Array(int size = 16)
     {
         ArrayHelpers.CheckIfSizeOfArrayValid(size);
         InnerArray = new Object[size];
     }
-
     // Constructor that takes an array and initializes the internal array with its elements
     public Array(params Object[] sourceArray) : this(sourceArray?.Length ?? 0)
     {
         ArrayHelpers.CheckIfSourceArrayNull(sourceArray);
         System.Array.Copy(sourceArray, InnerArray, sourceArray.Length);
     }
-
     public Object GetValue(int index)
     {
         ArrayHelpers.CheckIfIndexValid(index, InnerArray.Length);
@@ -32,7 +29,6 @@ public class Array : ICloneable, IEnumerable
         ArrayHelpers.CheckIfValueNull(value);
         InnerArray[index] = value;
     }
-
     public override string ToString()
     {
         var result = string.Empty;
@@ -49,13 +45,11 @@ public class Array : ICloneable, IEnumerable
         }
         return result;
     }
-
     public object Clone()
     {
         return MemberwiseClone();
     }
-
-    public IEnumerator GetEnumerator()
+    public virtual IEnumerator GetEnumerator()
     {
         //return InnerArray.GetEnumerator();
         return new CustomArrayEnumerator(InnerArray);
