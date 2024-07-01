@@ -84,4 +84,39 @@ public class ArrayListTests
         //Assert
         Assert.Equal("ABC", s);
     }
+
+    [Fact]
+    public void Index_of_Test()
+    {
+        //Arrange
+        _arrayList.Add("A");//0
+        _arrayList.Add("B");//1
+        _arrayList.Add("C");//2
+        _arrayList.Add("D");//3
+
+        //Act
+        var index = _arrayList.IndexOf("C");//2
+
+        //Assert
+        Assert.Equal(2, index);
+    }
+
+    [Fact]
+    public void ArrayList_Constructor_With_IEnumerable_Test()
+    {
+        //Arrange
+        var list = new List<int>() { 1, 2, 3, 4, 5 };
+
+        //Act
+        var arrayList = new ArrayList(list);
+        string s = String.Empty;
+
+        foreach (var item in arrayList)
+        {
+            s += item.ToString();
+        }
+
+        //Assert
+        Assert.Equal("12345", s);
+    }
 }

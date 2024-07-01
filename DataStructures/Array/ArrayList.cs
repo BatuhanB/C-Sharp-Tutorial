@@ -10,6 +10,13 @@ public class ArrayList : Array
     {
         position = 0;
     }
+    public ArrayList(IEnumerable collection) : this()
+    {
+        foreach (var item in collection)
+        {
+            Add(item);
+        }
+    }
     public void Add(Object value)
     {
         if (position == Length)
