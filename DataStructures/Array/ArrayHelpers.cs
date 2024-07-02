@@ -1,7 +1,5 @@
-﻿using System.Drawing;
-
-namespace DataStructers.Array;
-internal static class ArrayHelpers
+﻿namespace DataStructers.Array;
+internal static class ArrayHelpers<T>
 {
     internal static void CheckIfSizeOfArrayValid(int size)
     {
@@ -10,6 +8,11 @@ internal static class ArrayHelpers
     }
 
     internal static void CheckIfSourceArrayNull(Object[] sourceArray)
+    {
+        if (sourceArray == null)
+            throw new ArgumentNullException(nameof(sourceArray), "Source array cannot be null.");
+    }
+    internal static void CheckIfSourceArrayNullT(T[] sourceArray)
     {
         if (sourceArray == null)
             throw new ArgumentNullException(nameof(sourceArray), "Source array cannot be null.");

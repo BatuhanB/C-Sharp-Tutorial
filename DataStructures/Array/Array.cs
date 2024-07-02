@@ -9,24 +9,24 @@ public class Array : ICloneable, IEnumerable
     // Default constructor with a size of 16
     public Array(int size = 16)
     {
-        ArrayHelpers.CheckIfSizeOfArrayValid(size);
+        ArrayHelpers<Object>.CheckIfSizeOfArrayValid(size);
         InnerArray = new Object[size];
     }
     // Constructor that takes an array and initializes the internal array with its elements
     public Array(params Object[] sourceArray) : this(sourceArray?.Length ?? 0)
     {
-        ArrayHelpers.CheckIfSourceArrayNull(sourceArray);
+        ArrayHelpers<Object>.CheckIfSourceArrayNull(sourceArray);
         System.Array.Copy(sourceArray, InnerArray, sourceArray.Length);
     }
     public Object GetValue(int index)
     {
-        ArrayHelpers.CheckIfIndexValid(index, InnerArray.Length);
+        ArrayHelpers<Object>.CheckIfIndexValid(index, InnerArray.Length);
         return InnerArray[index];
     }
     public void SetValue(Object value, int index)
     {
-        ArrayHelpers.CheckIfIndexValid(index, InnerArray.Length);
-        ArrayHelpers.CheckIfValueNull(value);
+        ArrayHelpers<Object>.CheckIfIndexValid(index, InnerArray.Length);
+        ArrayHelpers<Object>.CheckIfValueNull(value);
         InnerArray[index] = value;
     }
     public override string ToString()
