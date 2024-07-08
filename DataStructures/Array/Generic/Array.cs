@@ -129,7 +129,6 @@ public class Array<T> : IEnumerable<T>, ICloneable
     {
         return GetEnumerator();
     }
-
     private class ArrayEnumerator<T> : IEnumerator<T>
     {
         private T[] _array;

@@ -1,5 +1,6 @@
 ﻿using Course.Web.Handler;
 using System;
+using static Algorithms.BinaryTree;
 using static Algorithms.Graphs;
 
 namespace Algorithms
@@ -249,6 +250,53 @@ namespace Algorithms
             //test.MyMethod1();
             //TestStatic.MyMethod2();
 
+            #endregion
+
+            #region Recursive
+
+            var rec = new Recursive();
+
+            //rec.WriteElements_Recursive(0);
+
+            //Console.WriteLine(rec.FindNumber_Recursive(0, 526));
+
+            #endregion
+
+            #region SortArray
+
+            //SortArray.SortArray_Hash_Table();
+
+            #endregion
+
+            #region BinaryTree
+
+            //              8
+            //            /   \             
+            //           /     \
+            //          6      10
+            //         / \     / \
+            //        3   7   11  12
+            //         \           \
+            //          4          14
+
+            var rootNode = new Node(8);
+
+            AddNode(rootNode,10);
+            AddNode(rootNode,6);
+            AddNode(rootNode,3);
+            AddNode(rootNode,12);
+            AddNode(rootNode,4);
+            AddNode(rootNode,14);
+            AddNode(rootNode,7);
+            AddNode(rootNode,11);
+
+            Traverse(rootNode);
+
+            Console.WriteLine("---------------------");
+
+            FindNode(rootNode,14);
+
+            Console.ReadKey();
             #endregion
         }
     }

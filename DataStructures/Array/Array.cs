@@ -76,7 +76,6 @@ public class Array : ICloneable, IEnumerable
             _index = -1;
         }
     }
-
     public int IndexOf(Object value)
     {
         for (int i = 0; i < InnerArray.Length; i++)
