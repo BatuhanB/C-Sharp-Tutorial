@@ -279,24 +279,24 @@ namespace Algorithms
             //         \           \
             //          4          14
 
-            var rootNode = new Node(8);
+            //var rootNode = new Node(8);
 
-            AddNode(rootNode,10);
-            AddNode(rootNode,6);
-            AddNode(rootNode,3);
-            AddNode(rootNode,12);
-            AddNode(rootNode,4);
-            AddNode(rootNode,14);
-            AddNode(rootNode,7);
-            AddNode(rootNode,11);
+            //AddNode(rootNode,10);
+            //AddNode(rootNode,6);
+            //AddNode(rootNode,3);
+            //AddNode(rootNode,12);
+            //AddNode(rootNode,4);
+            //AddNode(rootNode,14);
+            //AddNode(rootNode,7);
+            //AddNode(rootNode,11);
 
-            Traverse(rootNode);
+            //Traverse(rootNode);
 
-            Console.WriteLine("---------------------");
+            //Console.WriteLine("---------------------");
 
-            FindNode(rootNode,14);
+            //FindNode(rootNode,14);
 
-            Console.ReadKey();
+            //Console.ReadKey();
             #endregion
         }
     }

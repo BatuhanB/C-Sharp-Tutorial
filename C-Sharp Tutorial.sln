@@ -23,17 +23,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UIs", "UIs", "{DBD09937-891
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{84A2201B-54C6-4D8D-8C99-F3045DC97FAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueAndReferenceTypes", "Applications\ValueAndReferenceTypes\ValueAndReferenceTypes.csproj", "{D8D9DB91-1E08-432A-A7DC-51671B3F868C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueAndReferenceTypes", "Applications\ValueAndReferenceTypes\ValueAndReferenceTypes.csproj", "{D8D9DB91-1E08-432A-A7DC-51671B3F868C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplications", "Tests\TestApplications\TestApplications.csproj", "{76AE5236-4A3A-46FD-B613-A6B35E1C3085}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApplications", "Tests\TestApplications\TestApplications.csproj", "{76AE5236-4A3A-46FD-B613-A6B35E1C3085}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructures", "DataStructures", "{5106F8AD-E4AB-4511-81BB-BCFE9945C711}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "DataStructures\Array\Array.csproj", "{9A0875AD-CEA7-4C6B-B8F0-7D46D3742E88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Array", "DataStructures\Array\Array.csproj", "{9A0875AD-CEA7-4C6B-B8F0-7D46D3742E88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayApp", "UIs\ArrayApp\ArrayApp.csproj", "{D8F4CAB8-77AE-48F9-90DE-6C540E72C1A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayApp", "UIs\ArrayApp\ArrayApp.csproj", "{D8F4CAB8-77AE-48F9-90DE-6C540E72C1A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDataStructers", "Tests\TestDataStructures\TestDataStructers\TestDataStructers.csproj", "{B93BA12C-2B5D-40FC-A48C-33CCDE0ADB8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDataStructers", "Tests\TestDataStructures\TestDataStructers\TestDataStructers.csproj", "{B93BA12C-2B5D-40FC-A48C-33CCDE0ADB8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueStack", "QueueStack\QueueStack.csproj", "{C84574B7-0011-4A75-8B81-90D7D8F40218}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +91,10 @@ Global
 		{B93BA12C-2B5D-40FC-A48C-33CCDE0ADB8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B93BA12C-2B5D-40FC-A48C-33CCDE0ADB8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B93BA12C-2B5D-40FC-A48C-33CCDE0ADB8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C84574B7-0011-4A75-8B81-90D7D8F40218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C84574B7-0011-4A75-8B81-90D7D8F40218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C84574B7-0011-4A75-8B81-90D7D8F40218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C84574B7-0011-4A75-8B81-90D7D8F40218}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
