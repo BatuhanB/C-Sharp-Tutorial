@@ -7,6 +7,8 @@ public class MyQueue<T>
     private int tail = -1;
     private int count = 0;
 
+
+    // head => 1, 2, 3, 5, 6,<= tail 0, 0, 0, 0, 0
     public MyQueue(int initialSize = DEFAULT_SIZE)
     {
         elements = new T[initialSize];
@@ -65,7 +67,6 @@ public class MyQueue<T>
         head = 0;
         tail = count - 1;
     }
-
 
     public override string ToString()
     {
