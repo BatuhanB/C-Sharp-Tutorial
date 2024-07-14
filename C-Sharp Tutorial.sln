@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayApp", "UIs\ArrayApp\Ar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDataStructers", "Tests\TestDataStructures\TestDataStructers\TestDataStructers.csproj", "{B93BA12C-2B5D-40FC-A48C-33CCDE0ADB8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueStack", "QueueStack\QueueStack.csproj", "{C84574B7-0011-4A75-8B81-90D7D8F40218}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueStack", "QueueStack\QueueStack.csproj", "{C84574B7-0011-4A75-8B81-90D7D8F40218}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSort", "BubbleSort\BubbleSort.csproj", "{61EF6F14-5B4A-4395-AB35-9BDC1D897CB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +97,10 @@ Global
 		{C84574B7-0011-4A75-8B81-90D7D8F40218}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C84574B7-0011-4A75-8B81-90D7D8F40218}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C84574B7-0011-4A75-8B81-90D7D8F40218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61EF6F14-5B4A-4395-AB35-9BDC1D897CB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61EF6F14-5B4A-4395-AB35-9BDC1D897CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61EF6F14-5B4A-4395-AB35-9BDC1D897CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61EF6F14-5B4A-4395-AB35-9BDC1D897CB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

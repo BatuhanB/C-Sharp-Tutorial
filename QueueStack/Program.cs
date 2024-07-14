@@ -1,7 +1,7 @@
 ﻿using QueueStack;
 
 //Queue();
-Stack();
+//Stack();
 
 static void Queue()
 {
