@@ -1,6 +1,6 @@
 ﻿using InsertionSort;
 
-int[] nums = [12, 3, 5, 2, 6, 85, 23, 13];
+int[] nums = [3, 5, 2, 8, 6, 85, 1, 7, 23, 12];
 var insertionSort = new MyInsertionSort();
 
 insertionSort.Sort(nums);

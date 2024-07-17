@@ -1,6 +1,6 @@
 ﻿using SelectionSort;
 
-int[] arr = [1,3,5,2,6,85,23,12];
+int[] arr = [3, 5, 2, 8, 6, 85, 1, 7, 23, 12];
 var selectionSort = new MySelectionSort();
 
 selectionSort.Sort(arr);
