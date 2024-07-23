@@ -1,12 +1,12 @@
 ﻿#region Dynamic Proxy
 
-//using AspectOrientedProgramming.CastleDynamicProxy;
-//using Castle.DynamicProxy;
+using AspectOrientedProgramming.CastleDynamicProxy;
+using Castle.DynamicProxy;
 
-//var proxy = new ProxyGenerator();
-//var aspect = proxy.CreateClassProxy<MyClass>(new MyInterceptorAspect());
-//aspect.MyMethod();
-//Console.ReadLine();
+var proxy = new ProxyGenerator();
+var aspect = proxy.CreateClassProxy<MyClass>(new MyInterceptorAspect());
+aspect.MyMethod();
+Console.ReadLine();
 
 #endregion
 
@@ -37,19 +37,19 @@
 
 #region Attribute
 
-using AspectOrientedProgramming.CastleDynamicProxy;
-using AspectOrientedProgramming.Core.Interceptors;
-using Autofac;
-using Autofac.Extras.DynamicProxy;
-using Castle.DynamicProxy;
+//using AspectOrientedProgramming.CastleDynamicProxy;
+//using AspectOrientedProgramming.Core.Interceptors;
+//using Autofac;
+//using Autofac.Extras.DynamicProxy;
+//using Castle.DynamicProxy;
 
-var builder = new ContainerBuilder();
-builder.RegisterType<MyClass>().As<IMyClass>().EnableInterfaceInterceptors(new ProxyGenerationOptions()
-{
-    Selector = new AspectInterceptorSelector()
-}).SingleInstance();
+//var builder = new ContainerBuilder();
+//builder.RegisterType<MyClass>().As<IMyClass>().EnableInterfaceInterceptors(new ProxyGenerationOptions()
+//{
+//    Selector = new AspectInterceptorSelector()
+//}).SingleInstance();
 
-var container = builder.Build();
-var intercepted = container.Resolve<IMyClass>();
-intercepted.MyMethod();
+//var container = builder.Build();
+//var intercepted = container.Resolve<IMyClass>();
+//intercepted.MyMethod();
 #endregion

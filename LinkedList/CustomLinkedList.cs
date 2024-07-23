@@ -8,6 +8,22 @@ namespace LinkedList
 
 		public Node<T> Tail { get; private set; }
 
+		public void FindElement(T data) {
+			int index = 0;
+			Node<T> current = Head;
+			while (current != null)
+			{
+				if (current.Data.Equals(data))
+				{
+					Console.WriteLine($"Element({data}) has found in index: {index}");
+					return;
+                }
+				current = current.Next;
+				index++;
+			}
+            Console.WriteLine($"Element({data}) has not found!");
+        }
+
 		public void AddFirst(T data)
 		{
 			Node<T> node = new(data);
